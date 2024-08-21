@@ -1,13 +1,14 @@
 package org.week3;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
 
     public SelenideElement clickRecapture() {
-        return $("#RlquG0 > div > label > input[type=checkbox]");
+        return $(By.xpath("//input[@type='checkbox']"));
     }
 
 

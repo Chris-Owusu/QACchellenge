@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Aug 21 13:45:29 GMT 2024","Wed Aug 21 13:45:30 GMT 2024","713","Surefire suite","Surefire test","LoginTest","LoginTest","loginTest","loginTest",""
+"broken","Wed Aug 21 14:59:52 GMT 2024","Wed Aug 21 14:59:52 GMT 2024","1","Default Suite","QAC","LoginTest","LoginTest","tearDown","tearDown",""
+"failed","Wed Aug 21 14:20:21 GMT 2024","Wed Aug 21 14:20:21 GMT 2024","2","Default Suite","QAC","LoginTest","LoginTest","setUp","setUp",""
+"failed","Wed Aug 21 14:58:52 GMT 2024","Wed Aug 21 14:59:52 GMT 2024","60167","Default Suite","QAC","LoginTest","LoginTest","loginTest","loginTest",""

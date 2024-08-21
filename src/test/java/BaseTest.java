@@ -15,17 +15,13 @@ public class BaseTest {
 
         // Configure browser settings
         Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 10000;
-        Configuration.baseUrl = "https://www.saucedemo.com";
-//        Configuration.headless = true;
+        Configuration.timeout = 60000;
+        Configuration.baseUrl = "https://demo.nopcommerce.com/";
 
 
 
         // Open the base URL before each test
         open("/");
-        // Assert the current URL
-        assertEquals(WebDriverRunner.url(), "https://www.saucedemo.com/");
     }
 
     @AfterMethod

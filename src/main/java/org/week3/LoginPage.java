@@ -6,7 +6,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
 
-        public SelenideElement changeCurrency() {
+    public SelenideElement clickRecapture() {
+        return $("#RlquG0 > div > label > input[type=checkbox]");
+    }
+
+
+    public SelenideElement changeCurrency() {
             return $("#customerCurrency");
         }
 
@@ -50,7 +55,20 @@ public class LoginPage {
         return $("#topcartlink");
     }
 
+    public SelenideElement addGiftWrapping() {
+        return $("#checkout_attribute_1");
+    }
 
+    public SelenideElement agreementBtn() {
+        return $("#termsofservice");
+    }
 
+    public SelenideElement checkoutBtn() {
+        return $("#checkout");
+    }
+
+    public SelenideElement guestCheckout() {
+        return $(".button-1.checkout-as-guest-button");
+    }
 
 }

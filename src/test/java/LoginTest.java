@@ -7,6 +7,8 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void loginTest() {
+        loginPage.clickRecapture().click();
+
         loginPage.changeCurrency().selectOption("Euro");
         loginPage.searchBox("Desktop");
         loginPage.searchSubmitBtn().click();
@@ -18,8 +20,14 @@ public class LoginTest extends BaseTest {
         loginPage.selectRAM().selectOption("2 GB");
         loginPage.selectHDD().click();
         loginPage.comparePageAddToCart().click();
-        loginPage.closeAddToCartBtn().click();
 
         loginPage.cartBtn().click();
+        loginPage.closeAddToCartBtn().click();
+
+        loginPage.addGiftWrapping().selectOption("Yes [+$10.00]");
+        loginPage.agreementBtn().click();
+        loginPage.checkoutBtn().click();
+
+        loginPage.guestCheckout().click();
     }
 }
